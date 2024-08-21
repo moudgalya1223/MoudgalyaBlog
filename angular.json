@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": " docs" ,
+            "outputPath": "docs" ,
+            "baseHref": "/MoudgalyaBlog/",
             "index": "docs/index.html",
             "browser": "docs/main.ts",
             "polyfills": [
