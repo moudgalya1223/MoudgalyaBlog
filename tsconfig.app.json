@@ -9,11 +9,11 @@
     ]
   },
   "files": [
-    "src/main.ts",
-    "src/main.server.ts",
+    "docs/main.ts",
+    "docs/main.server.ts",
     "server.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "docs/**/*.d.ts"
   ]
 }
