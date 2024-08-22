@@ -7,13 +7,13 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist" ,
+            "outputPath": "dist/MoudgalyaBlog" ,
             "index": "index.html",
             "browser": "src/main.ts",
             "polyfills": [
