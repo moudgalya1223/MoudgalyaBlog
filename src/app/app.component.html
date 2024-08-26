@@ -8,15 +8,18 @@
 </head>
 <body>
     <div class="navbar">
-       <a [routerLink]="['/mw']" >MW</a>
+        <a [routerLink]="'/mw'" class="common">MW</a>
         <a href="#contact" class="common">Contact</a>
         <a href="#about" class="common">ABOUT</a>
     </div>
-
-    <div class="container">
-        <marquee direction="right"><h1>Welcome to the World Of Moudgalya</h1></marquee>      
+    <div class="container">  
+        <marquee style="color: green;"><h1>Welcome to My Realm of Digital Excellence: Where Innovation Meets Mastery</h1></marquee> 
+        <p style="font-size: larger;font-weight: 100;font-variant: inherit;font-style: oblique;"> </p>     
     </div>
-
+    <div class="scrollable-container ">
+        <p [innerHTML]="title1" class="quote"> </p>
+        <p [innerHTML]="para" class="para"></p>
+    </div>
 </body>
 </html>
 <router-outlet></router-outlet>
