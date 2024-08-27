@@ -55,6 +55,17 @@
     text-decoration: none;
     font-weight: bold;
   }
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #888888;
+  }
+  
   
   .social-icons {
     display: flex;
