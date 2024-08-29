@@ -54,3 +54,16 @@ body {
     padding: 10px;
   }
 }
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-row {
+    flex-direction: column;
+  }
+}
+
