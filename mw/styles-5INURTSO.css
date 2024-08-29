@@ -1,0 +1,56 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .dream {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .card-row {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-inner {
+    height: auto;
+  }
+
+  .card-front h2,
+  .card-back p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 16px;
+  }
+
+  .dream {
+    font-size: 20px;
+  }
+
+  .card-inner {
+    padding: 10px;
+  }
+}
