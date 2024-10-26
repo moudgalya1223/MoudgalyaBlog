@@ -10,13 +10,13 @@ body {
 /* Heading Styles */
 .heading {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 4vw; /* Use vw for responsive size */
     margin: 20px 0;
 }
 
 .dream {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 5vw; /* Use vw for responsive size */
     margin: 20px 0;
 }
 
@@ -67,22 +67,24 @@ body {
 .card-front {
     background-color: #4a90e2; /* Front color */
     color: white;
+    font-size: 3.5vw; /* Responsive font size */
 }
 
 .card-back {
     background-color: #e7e7e7; /* Back color */
     color: black;
+    font-size: 3.5vw; /* Responsive font size */
     transform: rotateY(180deg);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .heading {
-        font-size: 1.5em; /* Smaller heading size */
+        font-size: 6vw; /* Adjust font size for smaller screens */
     }
 
     .dream {
-        font-size: 1.8em; /* Smaller dream size */
+        font-size: 7vw; /* Adjust font size for smaller screens */
     }
 
     .card-row {
@@ -97,5 +99,10 @@ body {
 
     .card-inner {
         height: auto; /* Auto height for inner */
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 4vw; /* Responsive font size for card text */
     }
 }
