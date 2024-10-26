@@ -7,63 +7,125 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #070806; /* Maintain your desired background color */
+  color: #fff; /* Maintain text color */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4c90f7;
+  padding: 13px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff1f1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Container and text styles */
+.container {
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 30px; /* Adjusted for better readability */
+  color: #47ff66;
+  text-align: center; /* Centered quote */
+}
+
+.para {
+  font-style: oblique;
+  font-size: 20px; /* Adjusted for better readability */
+  color: #dcdcdc;
+  text-align: justify; /* Justified for a cleaner look */
+  margin: 10px 0;
+}
+
+/* Image and text container styles */
+.image-text-container {
+  display: flex;
+  flex-direction: column; /* Stack items on smaller screens */
+  align-items: center; /* Center-align the content */
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%; /* Responsive image */
+  max-width: 300px; /* Maximum width for larger displays */
+  border-radius: 10px; /* Rounded corners for image */
 }
 
 /* Responsive styling */
 @media (max-width: 768px) {
   .heading {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 20px;
   }
 
   .dream {
-    font-size: 24px;
+    font-size: 22px;
     margin: 10px 0;
   }
 
   .card-row {
-    flex-direction: column;
+    flex-direction: column; /* Stack cards vertically */
   }
 
   .card {
-    flex: 1 1 auto;
-    max-width: 100%;
-    margin-bottom: 20px;
+    flex: 1 1 auto; /* Allow card to grow and shrink */
+    max-width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Space between cards */
   }
 
   .card-inner {
-    height: auto;
+    height: auto; /* Allow inner card height to adjust */
+    padding: 10px; /* Padding for inner cards */
   }
 
   .card-front h2,
   .card-back p {
-    font-size: 16px;
+    font-size: 16px; /* Font size for card text */
   }
 }
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 16px;
+    font-size: 18px; /* Smaller heading on very small screens */
   }
 
   .dream {
-    font-size: 20px;
+    font-size: 20px; /* Adjust dream font size */
+  }
+
+  .quote {
+    font-size: 24px; /* Adjust quote size */
+  }
+
+  .para {
+    font-size: 18px; /* Adjust paragraph size */
   }
 
   .card-inner {
-    padding: 10px;
+    padding: 10px; /* Padding for inner cards on small screens */
   }
 }
-.card-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  .card-row {
-    flex-direction: column;
-  }
-}
-
