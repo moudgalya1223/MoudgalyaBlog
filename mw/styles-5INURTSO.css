@@ -1,10 +1,4 @@
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Basic Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #070806; /* Maintain your desired background color */
@@ -76,14 +70,27 @@ body {
   border-radius: 10px; /* Rounded corners for image */
 }
 
+/* Card styles */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .heading {
-    font-size: 20px;
+    font-size: 20px; /* Adjust heading size for tablets */
+    padding: 10px;
+  }
+
+  .quote {
+    font-size: 24px; /* Adjust quote size for tablets */
   }
 
   .dream {
-    font-size: 22px;
+    font-size: 22px; /* Adjust dream font size for tablets */
     margin: 10px 0;
   }
 
@@ -92,7 +99,7 @@ body {
   }
 
   .card {
-    flex: 1 1 auto; /* Allow card to grow and shrink */
+    flex: 1 1 auto;
     max-width: 100%; /* Full width on mobile */
     margin-bottom: 20px; /* Space between cards */
   }
@@ -106,6 +113,10 @@ body {
   .card-back p {
     font-size: 16px; /* Font size for card text */
   }
+
+  .para {
+    font-size: 18px; /* Adjust paragraph size for tablets */
+  }
 }
 
 @media (max-width: 480px) {
@@ -113,16 +124,16 @@ body {
     font-size: 18px; /* Smaller heading on very small screens */
   }
 
-  .dream {
-    font-size: 20px; /* Adjust dream font size */
+  .quote {
+    font-size: 20px; /* Adjust quote size for smaller screens */
   }
 
-  .quote {
-    font-size: 24px; /* Adjust quote size */
+  .dream {
+    font-size: 20px; /* Adjust dream font size for smaller screens */
   }
 
   .para {
-    font-size: 18px; /* Adjust paragraph size */
+    font-size: 16px; /* Smaller paragraph size for mobile */
   }
 
   .card-inner {
