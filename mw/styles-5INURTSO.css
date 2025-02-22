@@ -90,11 +90,13 @@ body {
     .card-row {
         flex-direction: column; /* Stack cards vertically */
         align-items: center; /* Center align cards */
+        gap: 10px; /* Reduce gap for smaller screens */
     }
 
     .card {
-        width: 90%; /* Responsive width for mobile */
+        width: 100%; /* Full width for mobile */
         height: auto; /* Auto height */
+        margin-bottom: 20px; /* Add margin between cards */
     }
 
     .card-inner {
@@ -103,6 +105,6 @@ body {
 
     .card-front,
     .card-back {
-        font-size: 4vw; /* Responsive font size for card text */
+        font-size: 5vw; /* Increase font size for card text */
     }
 }
